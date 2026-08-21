@@ -1236,55 +1236,50 @@
             Traditional Taste • Homemade Goodness •
             Authentic Pickles
         </p>
+</footer>
 
-    </footer>
+<script>
 
+    if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+    }
 
-
-    <!-- =========================
-         SLIDESHOW SCRIPT
-    ========================= -->
-
-    <script>
-
-        const images = [
-
-            "preparation1.jpg",
-
-            "preparation2.jpg",
-
-            "preparation3.jpg",
-
-            "preparation4.jpg"
-
-        ];
+    window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+    });
 
 
-        let currentImage = 0;
+    const images = [
+        "preparation1.jpg",
+        "preparation2.jpg",
+        "preparation3.jpg",
+        "preparation4.jpg"
+    ];
 
 
-        function nextImage() {
-
-            currentImage++;
-
-            if (currentImage >= images.length) {
-
-                currentImage = 0;
-
-            }
+    let currentImage = 0;
 
 
-            document.getElementById("heroSlideImage").src =
-                images[currentImage];
+    function nextImage() {
 
+        currentImage++;
+
+        if (currentImage >= images.length) {
+            currentImage = 0;
         }
 
+        document.getElementById("heroSlideImage").src =
+            images[currentImage];
 
-        setInterval(nextImage, 3000);
+    }
 
-    </script>
 
+    setInterval(nextImage, 3000);
+
+</script>
 
 </body>
+
+</html>
 
 </html>
