@@ -2,1223 +2,1332 @@
 <html lang="en">
 
 <head>
-<meta name="google-site-verification" content="mwtaOw1ApNsdeCh6eDO35QADegEelFvrXWoeXIE1mfM">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BRITANNICA ZESTY BITES</title>
+    <meta name="google-site-verification" content="mwtaOw1ApNsdeCh6eDO35QADegEelFvrXWoeXIE1mfM" />
 
-<style>
+    <meta charset="UTF-8">
 
-/* =========================
-   BASIC SETTINGS
-========================= */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    <title>BRITANNICA ZESTY BITES</title>
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background: #fffaf0;
-  color: #333;
-}
+    <style>
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-/* =========================
-   NAVIGATION
-========================= */
+        html {
+            scroll-behavior: smooth;
+        }
 
-.navbar {
-  width: 100%;
-  min-height: 150px;
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf0;
+            color: #333;
+        }
 
-  background-image: url("preparation1.jpg");
-  background-size: cover;
-  background-position: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+        /* =========================
+           TOP NAVIGATION
+        ========================= */
 
-  padding: 15px 5%;
+        .navbar {
+            width: 100%;
+            min-height: 150px;
 
-  box-shadow: 0 3px 15px rgba(0,0,0,0.15);
-}
+            background-image: url("preparation1.jpg");
+            background-size: cover;
+            background-position: center;
 
-.nav-logo img {
-  width: 150px;
-  height: auto;
-  display: block;
-}
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-.nav-links {
-  display: flex;
-  gap: 22px;
-  list-style: none;
+            padding: 15px 5%;
 
-  background: rgba(255,255,255,0.9);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+        }
 
-  padding: 12px 18px;
-  border-radius: 30px;
-}
 
-.nav-links a {
-  text-decoration: none;
-  color: #6b1d0c;
-  font-weight: bold;
-  font-size: 14px;
-  transition: 0.3s;
-}
+        .nav-logo img {
+            width: 150px;
+            height: auto;
+            display: block;
+        }
 
-.nav-links a:hover {
-  color: #e67e22;
-}
 
+        .nav-links {
+            display: flex;
+            gap: 22px;
 
-/* =========================
-   HERO SECTION
-========================= */
+            list-style: none;
 
-.hero {
-  min-height: 600px;
+            background: rgba(255,255,255,0.88);
 
-  padding: 70px 7%;
+            padding: 12px 18px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+            border-radius: 30px;
+        }
 
-  gap: 50px;
 
-  background: linear-gradient(
-    135deg,
-    #fff3d6,
-    #ffe0a3
-  );
-}
+        .nav-links a {
+            text-decoration: none;
 
-.hero-content {
-  width: 50%;
-  max-width: 560px;
-}
+            color: #6b1d0c;
 
-.explore {
-  display: inline-block;
+            font-weight: bold;
 
-  color: #d35400;
+            font-size: 14px;
 
-  font-weight: bold;
-  letter-spacing: 2px;
+            transition: 0.3s;
+        }
 
-  font-size: 14px;
 
-  margin-bottom: 18px;
-}
+        .nav-links a:hover {
+            color: #e67e22;
+        }
 
-.hero h1 {
-  font-size: 52px;
 
-  line-height: 1.1;
+        /* =========================
+           SLIDESHOW
+        ========================= */
 
-  color: #7b1e0a;
+        .slideshow {
+            width: 100%;
+            max-width: 900px;
 
-  margin-bottom: 20px;
-}
+            height: 400px;
 
-.hero h1 span {
-  color: #e67e22;
-}
+            margin: 40px auto;
 
-.hero p {
-  font-size: 18px;
+            position: relative;
 
-  line-height: 1.7;
+            overflow: hidden;
 
-  margin-bottom: 28px;
-}
+            border-radius: 20px;
 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 
-/* HERO BUTTONS */
+            cursor: pointer;
+        }
 
-.hero-buttons a {
-  display: inline-block;
 
-  text-decoration: none;
+        .slideshow img {
+            width: 100%;
+            height: 100%;
 
-  padding: 13px 24px;
+            object-fit: cover;
 
-  border-radius: 25px;
+            display: block;
+        }
 
-  margin-right: 10px;
 
-  font-weight: bold;
-}
+        /* =========================
+           HERO SECTION
+        ========================= */
 
-.btn-main {
-  background: #8b2e13;
-  color: white;
-}
+        .hero {
+            min-height: 600px;
 
-.btn-second {
-  background: white;
+            padding: 70px 7%;
 
-  color: #8b2e13;
+            display: flex;
 
-  border: 2px solid #8b2e13;
-}
+            align-items: center;
 
+            justify-content: space-between;
 
-/* =========================
-   SLIDESHOW
-========================= */
+            gap: 50px;
 
-.hero-image {
-  width: 45%;
-  max-width: 500px;
-}
+            background: linear-gradient(
+                135deg,
+                #fff3d6,
+                #ffe0a3
+            );
+        }
 
-.slideshow {
-  width: 100%;
-  height: 390px;
 
-  position: relative;
+        .hero-content {
+            max-width: 560px;
+        }
 
-  overflow: hidden;
 
-  border-radius: 25px;
+        .explore {
+            display: inline-block;
 
-  box-shadow: 0 12px 30px rgba(0,0,0,0.20);
+            color: #d35400;
 
-  cursor: pointer;
-}
+            font-weight: bold;
 
-.slideshow img {
-  width: 100%;
-  height: 100%;
+            letter-spacing: 2px;
 
-  object-fit: cover;
+            font-size: 14px;
 
-  display: block;
+            margin-bottom: 18px;
+        }
 
-  transition: opacity 0.5s ease;
-}
 
+        .hero h1 {
+            font-size: 52px;
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+            line-height: 1.1;
 
-.section {
-  padding: 70px 7%;
-}
+            color: #7b1e0a;
 
-.section-title {
-  text-align: center;
+            margin-bottom: 20px;
+        }
 
-  margin-bottom: 45px;
-}
 
-.section-title h2 {
-  font-size: 36px;
+        .hero h1 span {
+            color: #e67e22;
+        }
 
-  color: #7b1e0a;
 
-  margin-bottom: 10px;
-}
+        .hero p {
+            font-size: 18px;
 
-.section-title p {
-  color: #666;
+            line-height: 1.7;
 
-  font-size: 16px;
-}
+            margin-bottom: 28px;
+        }
 
 
-/* =========================
-   INGREDIENTS
-========================= */
+        .hero-buttons a {
+            display: inline-block;
 
-.cards {
-  display: grid;
+            text-decoration: none;
 
-  grid-template-columns: repeat(4, 1fr);
+            padding: 13px 24px;
 
-  gap: 25px;
-}
+            border-radius: 25px;
 
-.card {
-  background: white;
+            margin-right: 10px;
 
-  padding: 30px 20px;
+            font-weight: bold;
+        }
 
-  border-radius: 18px;
 
-  text-align: center;
+        .btn-main {
+            background: #8b2e13;
+            color: white;
+        }
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.10);
 
-  transition: 0.3s;
-}
+        .btn-second {
+            background: white;
 
-.card:hover {
-  transform: translateY(-8px);
-}
+            color: #8b2e13;
 
-.card .icon {
-  font-size: 45px;
+            border: 2px solid #8b2e13;
+        }
 
-  margin-bottom: 15px;
-}
 
-.card img {
-  width: 100%;
+        .hero-image {
+            width: 45%;
 
-  height: 180px;
+            max-width: 500px;
+        }
 
-  object-fit: cover;
 
-  border-radius: 15px;
+        .hero-image .slideshow {
+            width: 100%;
 
-  margin-bottom: 15px;
-}
+            height: 390px;
 
-.card h3 {
-  color: #8b2e13;
+            margin: 0;
+        }
 
-  margin-bottom: 10px;
-}
 
-.card p {
-  line-height: 1.5;
-}
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
 
+        .section {
+            padding: 70px 7%;
+        }
 
-/* =========================
-   STEPS
-========================= */
 
-.steps {
-  background: #fff0cf;
-}
+        .section-title {
+            text-align: center;
 
-.step-container {
-  display: grid;
+            margin-bottom: 45px;
+        }
 
-  grid-template-columns: repeat(4, 1fr);
 
-  gap: 25px;
-}
+        .section-title h2 {
+            font-size: 36px;
 
-.step {
-  background: white;
+            color: #7b1e0a;
 
-  padding: 25px;
+            margin-bottom: 10px;
+        }
 
-  border-radius: 18px;
 
-  text-align: center;
+        .section-title p {
+            color: #666;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
-}
+            font-size: 16px;
+        }
 
-.step-number {
-  width: 55px;
-  height: 55px;
 
-  line-height: 55px;
+        /* =========================
+           INGREDIENTS
+        ========================= */
 
-  border-radius: 50%;
+        .cards {
+            display: grid;
 
-  background: #8b2e13;
+            grid-template-columns: repeat(4, 1fr);
 
-  color: white;
+            gap: 25px;
+        }
 
-  font-size: 22px;
 
-  font-weight: bold;
+        .card {
+            background: white;
 
-  margin: 0 auto 15px;
-}
+            padding: 30px 20px;
 
-.step h3 {
-  color: #8b2e13;
+            border-radius: 18px;
 
-  margin-bottom: 10px;
-}
+            text-align: center;
 
-.step p {
-  line-height: 1.5;
-}
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
 
+            transition: 0.3s;
+        }
 
-/* =========================
-   BENEFITS
-========================= */
 
-.benefit-container {
-  max-width: 900px;
+        .card:hover {
+            transform: translateY(-8px);
+        }
 
-  margin: auto;
-}
 
-.benefit {
-  background: white;
+        .card .icon {
+            font-size: 45px;
 
-  margin-bottom: 15px;
+            margin-bottom: 15px;
+        }
 
-  padding: 20px;
 
-  border-left: 6px solid #e67e22;
+        .card img {
+            width: 100%;
 
-  border-radius: 10px;
+            height: 180px;
 
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
+            object-fit: cover;
 
-.benefit h3 {
-  color: #7b1e0a;
+            border-radius: 15px;
 
-  margin-bottom: 7px;
-}
+            margin-bottom: 15px;
+        }
 
 
-/* =========================
-   GALLERY
-========================= */
+        .card h3 {
+            color: #8b2e13;
 
-.gallery {
-  background: #fff0cf;
-}
+            margin-bottom: 10px;
+        }
 
-.gallery-grid {
-  display: grid;
 
-  grid-template-columns: repeat(4, 1fr);
+        .card p {
+            line-height: 1.5;
+        }
 
-  gap: 20px;
-}
 
-.gallery-grid img {
-  width: 100%;
+        /* =========================
+           STEPS
+        ========================= */
 
-  height: 220px;
+        .steps {
+            background: #fff0cf;
+        }
 
-  object-fit: cover;
 
-  border-radius: 18px;
+        .step-container {
+            display: grid;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            grid-template-columns: repeat(4, 1fr);
 
-  transition: 0.3s;
-}
+            gap: 25px;
+        }
 
-.gallery-grid img:hover {
-  transform: scale(1.04);
-}
 
+        .step {
+            background: white;
 
-/* =========================
-   ABOUT
-========================= */
+            padding: 25px;
 
-.about-box {
-  max-width: 900px;
+            border-radius: 18px;
 
-  margin: auto;
+            text-align: center;
 
-  background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
 
-  padding: 35px;
 
-  border-radius: 20px;
+        .step-number {
+            width: 55px;
 
-  text-align: center;
+            height: 55px;
 
-  line-height: 1.8;
+            line-height: 55px;
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-}
+            border-radius: 50%;
 
+            background: #8b2e13;
 
-/* =========================
-   PRODUCT
-========================= */
+            color: white;
 
-.product-box {
-  max-width: 900px;
+            font-size: 22px;
 
-  margin: auto;
+            font-weight: bold;
 
-  display: flex;
+            margin: 0 auto 15px;
+        }
 
-  align-items: center;
 
-  gap: 40px;
+        .step h3 {
+            color: #8b2e13;
 
-  background: #fff3d6;
+            margin-bottom: 10px;
+        }
 
-  padding: 35px;
 
-  border-radius: 22px;
-}
+        .step p {
+            line-height: 1.5;
+        }
 
-.product-box img {
-  width: 300px;
 
-  height: 250px;
+        .steps-slideshow {
+            max-width: 900px;
 
-  object-fit: cover;
+            margin: 40px auto 0;
+        }
 
-  border-radius: 18px;
-}
 
-.product-box h3 {
-  color: #7b1e0a;
+        .steps-slideshow img {
+            width: 100%;
 
-  font-size: 28px;
+            height: 400px;
 
-  margin-bottom: 15px;
-}
+            object-fit: cover;
 
-.product-box p {
-  line-height: 1.7;
-}
+            border-radius: 20px;
 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
 
-/* =========================
-   FOOTER
-========================= */
 
-footer {
-  background: #5c1608;
+        /* =========================
+           BENEFITS
+        ========================= */
 
-  color: white;
+        .benefit-container {
+            max-width: 900px;
 
-  text-align: center;
+            margin: auto;
+        }
 
-  padding: 30px 15px;
-}
 
-footer p {
-  margin: 5px;
-}
+        .benefit {
+            background: white;
 
+            margin-bottom: 15px;
 
-/* =========================
-   TABLET
-========================= */
+            padding: 20px;
 
-@media (max-width: 900px) {
+            border-left: 6px solid #e67e22;
 
-  .nav-links {
-    gap: 10px;
-  }
+            border-radius: 10px;
 
-  .nav-links a {
-    font-size: 12px;
-  }
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
 
-  .hero {
-    flex-direction: column;
 
-    text-align: center;
-  }
+        .benefit h3 {
+            color: #7b1e0a;
 
-  .hero-content {
-    width: 100%;
-  }
+            margin-bottom: 7px;
+        }
 
-  .hero-image {
-    width: 90%;
-  }
 
-  .cards,
-  .step-container,
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+        /* =========================
+           GALLERY
+        ========================= */
 
-  .product-box {
-    flex-direction: column;
+        .gallery {
+            background: #fff0cf;
+        }
 
-    text-align: center;
-  }
-}
 
+        .gallery-grid {
+            display: grid;
 
-/* =========================
-   MOBILE
-========================= */
+            grid-template-columns: repeat(4, 1fr);
 
-@media (max-width: 600px) {
+            gap: 20px;
+        }
 
-  .navbar {
-    flex-direction: column;
 
-    gap: 15px;
-  }
+        .gallery-grid img {
+            width: 100%;
 
-  .nav-links {
-    flex-wrap: wrap;
+            height: 220px;
 
-    justify-content: center;
-  }
+            object-fit: cover;
 
-  .hero h1 {
-    font-size: 38px;
-  }
+            border-radius: 18px;
 
-  .hero-image {
-    width: 100%;
-  }
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 
-  .slideshow {
-    height: 280px;
-  }
+            transition: 0.3s;
+        }
 
-  .cards,
-  .step-container,
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .product-box img {
-    width: 100%;
-  }
-}
+        .gallery-grid img:hover {
+            transform: scale(1.04);
+        }
 
-</style>
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-box {
+            max-width: 900px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            line-height: 1.8;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+        }
+
+
+        /* =========================
+           PRODUCT
+        ========================= */
+
+        .product-box {
+            max-width: 900px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 40px;
+
+            background: #fff3d6;
+
+            padding: 35px;
+
+            border-radius: 22px;
+        }
+
+
+        .product-box img {
+            width: 300px;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+        }
+
+
+        .product-box h3 {
+            color: #7b1e0a;
+
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .product-box p {
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #5c1608;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 15px;
+        }
+
+
+        footer p {
+            margin: 5px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                gap: 10px;
+            }
+
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+
+            .hero {
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .hero-image {
+                width: 90%;
+            }
+
+
+            .cards,
+            .step-container,
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            .product-box {
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+
+                gap: 10px;
+            }
+
+
+            .nav-links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+
+            .hero-image .slideshow {
+                height: 280px;
+            }
+
+
+            .cards,
+            .step-container,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .product-box img {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
-<nav class="navbar">
+    <nav class="navbar">
 
-  <div class="nav-logo">
+        <div class="nav-logo">
 
-    <img
-      src="logo.jpg.jpg"
-      alt="Britannica Zesty Bites Logo"
+            <img
+                src="logo.jpg.jpg"
+                alt="Britannica Zesty Bites Logo"
+            >
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">HOME</a>
+            </li>
+
+            <li>
+                <a href="#ingredients">INGREDIENTS</a>
+            </li>
+
+            <li>
+                <a href="#steps">STEPS</a>
+            </li>
+
+            <li>
+                <a href="#benefits">BENEFITS</a>
+            </li>
+
+            <li>
+                <a href="#gallery">GALLERY</a>
+            </li>
+
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+
+            <li>
+                <a href="#product">PRODUCT</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HOME
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="explore">
+                EXPLORE MORE
+            </div>
+
+
+            <h1>
+
+                Welcome to<br>
+
+                <span>
+                    Britannica Zesty Bites
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Discover the traditional art of pickle making,
+                from fresh ingredients to delicious homemade
+                goodness. Explore our ingredients, preparation
+                steps, benefits and colourful pickle collection.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#steps"
+                    class="btn-main"
+                >
+                    Explore Steps
+                </a>
+
+
+                <a
+                    href="#gallery"
+                    class="btn-second"
+                >
+                    View Gallery
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+            <div
+                class="slideshow"
+                onclick="nextImage()"
+            >
+
+                <img
+                    id="heroSlideImage"
+                    src="preparation1.jpg"
+                    alt="Pickle preparation"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INGREDIENTS
+    ========================= -->
+
+    <section
+        class="section"
+        id="ingredients"
     >
 
-  </div>
+        <div class="section-title">
+
+            <h2>
+                Ingredients 🥭
+            </h2>
+
+            <p>
+                Fresh ingredients and aromatic spices
+                bring the pickle to life.
+            </p>
+
+        </div>
 
 
-  <ul class="nav-links">
-
-    <li>
-      <a href="#home">HOME</a>
-    </li>
-
-    <li>
-      <a href="#ingredients">INGREDIENTS</a>
-    </li>
-
-    <li>
-      <a href="#steps">STEPS</a>
-    </li>
-
-    <li>
-      <a href="#benefits">BENEFITS</a>
-    </li>
-
-    <li>
-      <a href="#gallery">GALLERY</a>
-    </li>
-
-    <li>
-      <a href="#about">ABOUT</a>
-    </li>
-
-    <li>
-      <a href="#product">PRODUCT</a>
-    </li>
-
-  </ul>
-
-</nav>
+        <div class="cards">
 
 
+            <div class="card">
 
-<!-- =========================
-     HOME
-========================= -->
+                <div class="icon">
+                    🥭
+                </div>
 
-<section class="hero" id="home">
+                <img
+                    src="mangopickle.jpg"
+                    alt="Fresh Mango"
+                >
 
+                <h3>
+                    Fresh Mango
+                </h3>
 
-  <!-- LEFT SIDE -->
+                <p>
+                    Fresh raw mangoes provide the
+                    delicious sour and fruity base.
+                </p>
 
-  <div class="hero-content">
-
-    <div class="explore">
-      EXPLORE MORE
-    </div>
-
-
-    <h1>
-
-      Welcome to<br>
-
-      <span>
-        Britannica Zesty Bites
-      </span>
-
-    </h1>
-
-
-    <p>
-
-      Discover the traditional art of pickle making,
-      from fresh ingredients to delicious homemade goodness.
-      Explore our ingredients, preparation steps, benefits and
-      colourful pickle collection.
-
-    </p>
-
-
-    <div class="hero-buttons">
-
-      <a
-        href="#steps"
-        class="btn-main"
-      >
-        Explore Steps
-      </a>
-
-
-      <a
-        href="#gallery"
-        class="btn-second"
-      >
-        View Gallery
-      </a>
-
-    </div>
-
-  </div>
+            </div>
 
 
 
-  <!-- RIGHT SIDE SLIDESHOW -->
+            <div class="card">
 
-  <div class="hero-image">
+                <div class="icon">
+                    🌶️
+                </div>
 
-    <div
-      class="slideshow"
-      onclick="nextImage()"
+                <h3>
+                    Red Chilli
+                </h3>
+
+                <p>
+                    Adds colour, flavour and the
+                    perfect level of spice.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🧂
+                </div>
+
+                <h3>
+                    Salt
+                </h3>
+
+                <p>
+                    Helps develop the traditional
+                    taste of the pickle.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🫙
+                </div>
+
+                <h3>
+                    Oil & Spices
+                </h3>
+
+                <p>
+                    Traditional spices and oil give
+                    the pickle its rich flavour.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STEPS
+    ========================= -->
+
+    <section
+        class="section steps"
+        id="steps"
     >
 
-      <img
-        id="slideImage"
-        src="preparation1.jpg"
-        alt="Pickle preparation"
-      >
+        <div class="section-title">
 
-    </div>
+            <h2>
+                Pickle Preparation Steps 👩‍🍳
+            </h2>
 
-  </div>
+            <p>
+                From fresh ingredients to a tasty
+                traditional pickle.
+            </p>
 
+        </div>
 
-</section>
 
+        <div class="step-container">
 
 
-<!-- =========================
-     INGREDIENTS
-========================= -->
+            <div class="step">
 
-<section
-  class="section"
-  id="ingredients"
->
+                <div class="step-number">
+                    1
+                </div>
 
-  <div class="section-title">
+                <h3>
+                    Prepare
+                </h3>
 
-    <h2>
-      Ingredients 🥭
-    </h2>
+                <p>
+                    Wash and clean the fresh
+                    ingredients thoroughly.
+                </p>
 
-    <p>
-      Fresh ingredients and aromatic spices bring the pickle to life.
-    </p>
+            </div>
 
-  </div>
 
 
-  <div class="cards">
+            <div class="step">
 
+                <div class="step-number">
+                    2
+                </div>
 
-    <div class="card">
+                <h3>
+                    Cut
+                </h3>
 
-      <div class="icon">
-        🥭
-      </div>
+                <p>
+                    Cut the ingredients into
+                    suitable pieces.
+                </p>
 
-      <img
-        src="mangopickle.jpg"
-        alt="Fresh Mango"
-      >
+            </div>
 
-      <h3>
-        Fresh Mango
-      </h3>
 
-      <p>
-        Fresh raw mangoes provide the delicious sour and fruity base.
-      </p>
 
-    </div>
+            <div class="step">
 
+                <div class="step-number">
+                    3
+                </div>
 
+                <h3>
+                    Mix
+                </h3>
 
-    <div class="card">
+                <p>
+                    Combine salt, spices and
+                    other ingredients carefully.
+                </p>
 
-      <div class="icon">
-        🌶️
-      </div>
+            </div>
 
-      <h3>
-        Red Chilli
-      </h3>
 
-      <p>
-        Adds colour, flavour and the perfect level of spice.
-      </p>
 
-    </div>
+            <div class="step">
 
+                <div class="step-number">
+                    4
+                </div>
 
+                <h3>
+                    Store
+                </h3>
 
-    <div class="card">
+                <p>
+                    Store the pickle properly and
+                    allow the flavours to develop.
+                </p>
 
-      <div class="icon">
-        🧂
-      </div>
+            </div>
 
-      <h3>
-        Salt
-      </h3>
 
-      <p>
-        Helps develop the traditional taste of the pickle.
-      </p>
+        </div>
 
-    </div>
 
 
+        <div class="steps-slideshow">
 
-    <div class="card">
+            <div
+                class="slideshow"
+                onclick="nextImage()"
+            >
 
-      <div class="icon">
-        🫙
-      </div>
+                <img
+                    id="stepsSlideImage"
+                    src="preparation1.jpg"
+                    alt="Pickle Preparation"
+                >
 
-      <h3>
-        Oil & Spices
-      </h3>
+            </div>
 
-      <p>
-        Traditional spices and oil give the pickle its rich flavour.
-      </p>
+        </div>
 
-    </div>
+    </section>
 
 
-  </div>
 
-</section>
+    <!-- =========================
+         BENEFITS
+    ========================= -->
 
-
-
-<!-- =========================
-     STEPS
-========================= -->
-
-<section
-  class="section steps"
-  id="steps"
->
-
-  <div class="section-title">
-
-    <h2>
-      Pickle Preparation Steps 👩‍🍳
-    </h2>
-
-    <p>
-      From fresh ingredients to a tasty traditional pickle.
-    </p>
-
-  </div>
-
-
-  <div class="step-container">
-
-
-    <div class="step">
-
-      <div class="step-number">
-        1
-      </div>
-
-      <h3>
-        Prepare
-      </h3>
-
-      <p>
-        Wash and clean the fresh ingredients thoroughly.
-      </p>
-
-    </div>
-
-
-
-    <div class="step">
-
-      <div class="step-number">
-        2
-      </div>
-
-      <h3>
-        Cut
-      </h3>
-
-      <p>
-        Cut the ingredients into suitable pieces.
-      </p>
-
-    </div>
-
-
-
-    <div class="step">
-
-      <div class="step-number">
-        3
-      </div>
-
-      <h3>
-        Mix
-      </h3>
-
-      <p>
-        Combine salt, spices and other ingredients carefully.
-      </p>
-
-    </div>
-
-
-
-    <div class="step">
-
-      <div class="step-number">
-        4
-      </div>
-
-      <h3>
-        Store
-      </h3>
-
-      <p>
-        Store the pickle properly and allow the flavours to develop.
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     BENEFITS
-========================= -->
-
-<section
-  class="section"
-  id="benefits"
->
-
-  <div class="section-title">
-
-    <h2>
-      Benefits 💚
-    </h2>
-
-    <p>
-      Some traditional qualities of homemade pickles.
-    </p>
-
-  </div>
-
-
-  <div class="benefit-container">
-
-
-    <div class="benefit">
-
-      <h3>
-        🌿 Fresh Ingredients
-      </h3>
-
-      <p>
-        Homemade preparation allows careful selection of ingredients.
-      </p>
-
-    </div>
-
-
-
-    <div class="benefit">
-
-      <h3>
-        🌶️ Rich Flavour
-      </h3>
-
-      <p>
-        Traditional spices create a unique combination of taste and aroma.
-      </p>
-
-    </div>
-
-
-
-    <div class="benefit">
-
-      <h3>
-        🏠 Homemade Goodness
-      </h3>
-
-      <p>
-        Traditional recipes can bring a familiar homemade taste to meals.
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     GALLERY
-========================= -->
-
-<section
-  class="section gallery"
-  id="gallery"
->
-
-  <div class="section-title">
-
-    <h2>
-      Pickle Gallery 📸
-    </h2>
-
-    <p>
-      A colourful collection of traditional pickles.
-    </p>
-
-  </div>
-
-
-  <div class="gallery-grid">
-
-    <img
-      src="lemonpickle.jpg"
-      alt="Lemon Pickle"
+    <section
+        class="section"
+        id="benefits"
     >
 
-    <img
-      src="mangopickle.jpg"
-      alt="Mango Pickle"
+        <div class="section-title">
+
+            <h2>
+                Benefits 💚
+            </h2>
+
+            <p>
+                Some traditional qualities of
+                homemade pickles.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-container">
+
+
+            <div class="benefit">
+
+                <h3>
+                    🌿 Fresh Ingredients
+                </h3>
+
+                <p>
+                    Homemade preparation allows
+                    careful selection of ingredients.
+                </p>
+
+            </div>
+
+
+
+            <div class="benefit">
+
+                <h3>
+                    🌶️ Rich Flavour
+                </h3>
+
+                <p>
+                    Traditional spices create a
+                    unique combination of taste
+                    and aroma.
+                </p>
+
+            </div>
+
+
+
+            <div class="benefit">
+
+                <h3>
+                    🏠 Homemade Goodness
+                </h3>
+
+                <p>
+                    Traditional recipes can bring
+                    a familiar homemade taste
+                    to meals.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY
+    ========================= -->
+
+    <section
+        class="section gallery"
+        id="gallery"
     >
 
-    <img
-      src="spicypickle.jpg"
-      alt="Spicy Pickle"
+        <div class="section-title">
+
+            <h2>
+                Pickle Gallery 📸
+            </h2>
+
+            <p>
+                A colourful collection of
+                traditional pickles.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <img
+                src="lemonpickle.jpg"
+                alt="Lemon Pickle"
+            >
+
+            <img
+                src="mangopickle.jpg"
+                alt="Mango Pickle"
+            >
+
+            <img
+                src="spicypickle.jpg"
+                alt="Spicy Pickle"
+            >
+
+            <img
+                src="mixedpickle.jpg"
+                alt="Mixed Pickle"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section
+        class="section"
+        id="about"
     >
 
-    <img
-      src="mixedpickle.jpg"
-      alt="Mixed Pickle"
+        <div class="section-title">
+
+            <h2>
+                About Us ❤️
+            </h2>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <p>
+
+                Welcome to Britannica Zesty Bites!
+                Our project explores the traditional
+                preparation of Indian pickles, the
+                ingredients used, the preparation
+                process and the flavours that make
+                pickles a special part of Indian
+                food culture.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCT
+    ========================= -->
+
+    <section
+        class="section"
+        id="product"
     >
 
-  </div>
+        <div class="section-title">
 
-</section>
+            <h2>
+                Our Product 🫙
+            </h2>
 
+        </div>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+        <div class="product-box">
 
-<section
-  class="section"
-  id="about"
->
+            <img
+                src="lemonpickle.jpg"
+                alt="Britannica Zesty Bites Lemon Pickle"
+            >
 
-  <div class="section-title">
 
-    <h2>
-      About Us ❤️
-    </h2>
+            <div>
 
-  </div>
+                <h3>
+                    Traditional Lemon Pickle 🍋
+                </h3>
 
+                <p>
 
-  <div class="about-box">
+                    A tangy and spicy pickle inspired
+                    by traditional homemade recipes.
+                    Explore the ingredients and
+                    preparation process to learn how
+                    this delicious pickle is made.
 
-    <p>
+                </p>
 
-      Welcome to Britannica Zesty Bites!
+            </div>
 
-      Our project explores the traditional preparation
-      of Indian pickles, the ingredients used,
-      the preparation process and the flavours
-      that make pickles a special part of Indian food culture.
+        </div>
 
-    </p>
+    </section>
 
-  </div>
 
-</section>
 
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
+    <footer>
 
-<!-- =========================
-     PRODUCT
-========================= -->
+        <p>
+            © 2026 BRITANNICA ZESTY BITES
+        </p>
 
-<section
-  class="section"
-  id="product"
->
+        <p>
+            Traditional Taste • Homemade Goodness •
+            Authentic Pickles
+        </p>
 
-  <div class="section-title">
+    </footer>
 
-    <h2>
-      Our Product 🫙
-    </h2>
 
-  </div>
 
+    <!-- =========================
+         SLIDESHOW SCRIPT
+    ========================= -->
 
-  <div class="product-box">
+    <script>
 
+        const images = [
 
-    <img
-      src="lemonpickle.jpg"
-      alt="Britannica Zesty Bites Lemon Pickle"
-    >
+            "preparation1.jpg",
 
+            "preparation2.jpg",
 
-    <div>
+            "prepartion3.jpg",
 
-      <h3>
-        Traditional Lemon Pickle 🍋
-      </h3>
+            "prepartion4.jpg"
 
-      <p>
+        ];
 
-        A tangy and spicy pickle inspired by
-        traditional homemade recipes.
 
-        Explore the ingredients and preparation process
-        to learn how this delicious pickle is made.
+        let currentImage = 0;
 
-      </p>
 
-    </div>
+        function nextImage() {
 
+            currentImage++;
 
-  </div>
+            if (currentImage >= images.length) {
 
-</section>
+                currentImage = 0;
 
+            }
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+            document.getElementById("heroSlideImage").src =
+                images[currentImage];
 
-<footer>
 
-  <p>
-    © 2026 BRITANNICA ZESTY BITES
-  </p>
+            document.getElementById("stepsSlideImage").src =
+                images[currentImage];
 
-  <p>
-    Traditional Taste • Homemade Goodness • Authentic Pickles
-  </p>
+        }
 
-</footer>
 
+        setInterval(nextImage, 3000);
 
-
-<!-- =========================
-     SLIDESHOW JAVASCRIPT
-========================= -->
-
-<script>
-
-const images = [
-
-  "preparation1.jpg",
-
-  "preparation2.jpg",
-
-  "prepartion3.jpg",
-
-  "prepartion4.jpg"
-
-];
-
-
-let currentImage = 0;
-
-
-function nextImage() {
-
-  currentImage++;
-
-  if (currentImage >= images.length) {
-
-    currentImage = 0;
-
-  }
-
-
-  document.getElementById("slideImage").src =
-    images[currentImage];
-
-}
-
-
-/* Automatically change image every 3 seconds */
-
-setInterval(nextImage, 3000);
-
-</script>
+    </script>
 
 
 </body>
+
 </html>
