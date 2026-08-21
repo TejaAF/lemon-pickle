@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja's Pickle World</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8e7;
+      color: #333;
+    }
+
+    header {
+      background: #8b0000;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #5c0000;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: #ffe8b3;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      color: #8b0000;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #8b0000;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .pickle-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .pickle-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .pickle-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .pickle-card h3 {
+      color: #8b0000;
+      margin: 15px 5px 8px;
+    }
+
+    .pickle-card p {
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+
+    .about {
+      background: #fff0c9;
+      text-align: center;
+      line-height: 1.7;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    footer {
+      background: #5c0000;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🥒 Teja's Pickle World 🥒</h1>
+    <p>Traditional Taste • Homemade Goodness • Authentic Pickles</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pickles">Pickles</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Our Pickle World!</h2>
+    <p>
+      Discover delicious traditional Indian pickles made with fresh
+      ingredients, aromatic spices and lots of love.
+    </p>
+  </section>
+
+  <section class="section" id="pickles">
+    <h2>Our Pickle Collection 🌶️</h2>
+
+    <div class="pickle-container">
+
+      <div class="pickle-card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+             alt="Lemon Pickle">
+        <h3>Lemon Pickle 🍋</h3>
+        <p>Tangy, spicy and full of traditional Indian flavour.</p>
+      </div>
+
+      <div class="pickle-card">
+        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+             alt="Mango Pickle">
+        <h3>Mango Pickle 🥭</h3>
+        <p>A classic favourite with a perfect blend of spice and sourness.</p>
+      </div>
+
+      <div class="pickle-card">
+        <img src="https://images.unsplash.com/photo-1534483509719-3feaee7c30da?auto=format&fit=crop&w=800&q=80"
+             alt="Spicy Pickle">
+        <h3>Spicy Pickle 🌶️</h3>
+        <p>For pickle lovers who enjoy an extra kick of spice.</p>
+      </div>
+
+      <div class="pickle-card">
+        <img src="https://images.unsplash.com/photo-1599909533730-f9d6b3c6c8e7?auto=format&fit=crop&w=800&q=80"
+             alt="Mixed Pickle">
+        <h3>Mixed Pickle 🫙</h3>
+        <p>A delicious combination of vegetables and traditional spices.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Our Pickles ❤️</h2>
+
+    <div class="about">
+      <p>
+        Our pickles bring the taste of traditional homemade recipes to your
+        table. We believe that good pickles need fresh ingredients, quality
+        spices and plenty of care.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Teja's Pickle World | Made with ❤️</p>
+  </footer>
+
+</body>
+</html>
