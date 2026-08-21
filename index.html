@@ -8,6 +8,24 @@
 <title>BRITANNICA ZESTY BITES</title>
 
 <style>
+  .slideshow {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
   .card img {
     width: 100%;
     height: 180px;
@@ -441,6 +459,10 @@ footer p {
 
   <div class="nav-logo">
     <img src="logo.jpg.jpg" alt="Britannica Zesty Bites Logo">
+
+    <div class="slideshow" onclick="nextImage()">
+  <img id="slideImage" src="preparation.jpg" alt="Pickle Preparation">
+
   </div>
 
   <ul class="nav-links">
@@ -674,7 +696,29 @@ footer p {
   <p>Traditional Taste • Homemade Goodness • Authentic Pickles</p>
 
 </footer>
+<script>
+const images = [
+  "preparation1.jpg",
+  "preparation2.jpg",
+  "prepartion3.jpg",
+  "prepartion4.jpg"
+];
 
+let currentImage = 0;
+
+function nextImage() {
+  currentImage++;
+
+  if (currentImage >= images.length) {
+    currentImage = 0;
+  }
+
+  document.getElementById("slideImage").src = images[currentImage];
+}
+
+setInterval(nextImage, 3000);
+</script>
+  
 </body>
 </html>
 ```
