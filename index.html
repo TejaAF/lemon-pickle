@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta name="google-site-verification" content="mwtaOw1ApNsdeCh6eDO35QADegEelFvrXWoeXIE1mfM" />
+    <meta name="google-site-verification" content="mwtaOw1ApNsdeCh6eDO35QADegEelFvrXWoeXIE1mfM">
 
     <meta charset="UTF-8">
 
@@ -400,26 +400,6 @@
 
         .step p {
             line-height: 1.5;
-        }
-
-
-        .steps-slideshow {
-            max-width: 900px;
-
-            margin: 40px auto 0;
-        }
-
-
-        .steps-slideshow img {
-            width: 100%;
-
-            height: 400px;
-
-            object-fit: cover;
-
-            border-radius: 20px;
-
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
 
 
@@ -1021,25 +1001,6 @@
 
         </div>
 
-
-
-        <div class="steps-slideshow">
-
-            <div
-                class="slideshow"
-                onclick="nextImage()"
-            >
-
-                <img
-                    id="stepsSlideImage"
-                    src="preparation1.jpg"
-                    alt="Pickle Preparation"
-                >
-
-            </div>
-
-        </div>
-
     </section>
 
 
@@ -1314,10 +1275,6 @@
 
 
             document.getElementById("heroSlideImage").src =
-                images[currentImage];
-
-
-            document.getElementById("stepsSlideImage").src =
                 images[currentImage];
 
         }
